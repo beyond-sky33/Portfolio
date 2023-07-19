@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19fb0b6fc4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>I,m </p> -->
+                <h1>Hi, I'm <span>Badal Kumar</span><br>From India <br> <span class="auto-input"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------about------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello and welcome to my portfolio! I am a dedicated frontend developer that enjoys designing
+                        aesthetically beautiful and interactive websites. I specialise in creating engaging user
+                        interfaces and seamless user experiences using HTML, CSS, and JavaScript. I've worked with
+                        modern frontend frameworks such as React and Tailwind CSS, allowing me to create responsive and
+                        dynamic online applications. You'll discover samples of my work in this portfolio that
+                        demonstrate my originality and attention to detail. Thank you for stopping by, and I'm looking
+                        forward to contributing my frontend development abilities to future projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>UI/UX</span><br>designing Web/App interfaces</li>
+                            <li><span>Youtuber</span><br>Educational Content Videos</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web app development</li>
+                            <li><span>2023 - Current</span><br>designing Web/App interfaces</li>
+                            <li><span>2020 - Current - Youtuber</span><br>Educational Content Videos</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016 - 10th</span><br> Bihar School Examination Board</li>
+                            <li><span>2018 - 12th</span><br> Bihar School Examination Board</li>
+                            <li><span>2020 - 2024 - B.Tech(CSE)</span><br>Academy of Technology, West Bengal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------Services--------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Unleash your online potential! As a web design freelancer, I create stunning, user-friendly websites that set you apart. Let's craft your digital success together. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>"Elevate your digital experiences with my expert UI/UX design services. As a skilled freelancer, I craft user-centric interfaces that leave a lasting impact. Let's collaborate to turn your vision into an exceptional, engaging, and competitive product." </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Freelancer</h2>
+                    <p>"Looking to bring your creative projects to life? As a versatile freelancer, I offer top-notch skills and dedication to turn your ideas into reality. Whether it's web design, graphic art, writing, or anything in between, I'm here to deliver quality results that exceed your expectations. Let's work together and make your vision shine!" </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------Portfolio---------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Barbershop</h3>
+                        <p>"Revamp for a barbershop website - blending classic and modern aesthetics for a user-friendly experience. Book appointments, explore services, and meet the barbers. Get ready for a cutting-edge online presence!"</p>
+                        <a href="https://beyond-sky33.github.io/Barber_shop/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Quiz Application</h3>
+                        <p>The quiz website is an interactive platform featuring fun and educational quizzes on various topics. Users can easily navigate, select a quiz, answer questions, and get instant feedback. It's a seamless and engaging experience that blends learning with entertainment for all ages.</p>
+                        <a href="https://beyond-sky33.github.io/Quiz-App/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Online Food Delivery </h3>
+                        <p>The online food delivery frontend website project aims to create a user-friendly platform for customers to order food conveniently. It features intuitive navigation, enticing visuals, and a secure checkout process. Customers can save preferences, track orders, and provide feedback, enhancing their overall experience.</p>
+                        <a href="https://beyond-sky33.github.io/Foodies/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>badalyadav.cse@outlook.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-7634976249</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/badal7634"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/beyond_skye_?t=MrE5uY_ETAeZJtHqVBw78A&s=09"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/beyond.skye/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/badalkumar095/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/beyond-sky33"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Badal Kumar."All rights reserved"</p>
+        </div>
+    </div>
+
+
+    <!------------------------------JavaScript Link Add--------------------------->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Web Developer...", "UI/UX Designer...", "Freelancer...", "YouTuber..."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script src="script.js"></script>
+
+    <!-- ---------------Google Sheet link ---------------------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEKxJE7DoLbKjtGhXO62-vj02T2ruD1auu1e4ycy5bmulqkbO143cGxj_8FXp074ZI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        mag.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
